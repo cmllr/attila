@@ -4,7 +4,7 @@
 		<nav id="navigation">
 			{{#if @blog.logo}}
 			<span class="blog-logo">
-				<a href="https://chmr.eu"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+				<a href="{{ @blog.url }}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
 			</span>
 			{{/if}}
 			{{#if @blog.navigation}}
@@ -13,7 +13,7 @@
 			</span>
 			{{/if}}
 		</nav>
-		<h1 class="blog-name"><a href="https://chmr.eu">{{@blog.title}}</a></h1>
+		<h1 class="blog-name"><a href="{{ @blog.url }}">{{@blog.title}}</a></h1>
 		{{#if @blog.description}}
 		<span class="blog-description">{{@blog.description}}</span>
 		{{/if}}

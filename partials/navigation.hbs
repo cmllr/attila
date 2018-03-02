@@ -12,11 +12,7 @@
 			{{#if @blog.facebook}}
 			<li class="nav-facebook"><a href="{{facebook_url}}" title="{{@blog.facebook}}"><i class="ic ic-facebook"></i> Facebook</a></li>
 			{{/if}}
-			{{#if @labs.subscribers}}
-			<li class="nav-subscribe"><a href="https://chmr.eu/subscribe/"><i class="ic ic-mail"></i> Subscribe</a></li>
-			{{else}}
-			<li class="nav-rss"><a href="https://chmr.eu/rss/"><i class="ic ic-rss"></i> Subscribe</a></li>
-			{{/if}}
+			<li class="nav-rss"><a href="{{ @blog.url }}/rss/"><i class="ic ic-rss"></i> Subscribe</a></li>
 		</ul>
 	</div>
 </nav>

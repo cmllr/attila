@@ -11,11 +11,11 @@
 		<nav id="navigation">
 			{{#if @blog.logo}}
 			<span class="blog-logo">
-				<a href="https://chmr.eu"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
+				<a href="{{ @blog.url }}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>
 			</span>
 			{{else}}
 			<span id="home-button" class="nav-button">
-				<a class="home-button" href="https://chmr.eu" title="Home"><i class="ic ic-arrow-left"></i> Startseite</a>
+				<a class="home-button" href="{{ @blog.url }}" title="Home"><i class="ic ic-arrow-left"></i> Startseite</a>
 			</span>
 			{{/if}}
 			{{#if @blog.navigation}}
@@ -78,9 +78,9 @@
 			</section>
 
 
-			<section class="post-comments">
-				<a id="show-disqus" class="post-comments-activate">Show Comments</a>
-			    <div id="disqus_thread"></div>
+			<section class="post-comment">
+	  <div  id="flurfunk"></div>
+  <script src="https://io.0fury.de/static/flurfunk.min.js"></script>
 			</section>
 
             {{#if @labs.subscribers}}
